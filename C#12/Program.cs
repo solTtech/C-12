@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Input safety Score");
-int safetyScore = int.Parse(Console.ReadLine());
+System.Console.WriteLine("Input safety Score");
+int safetyScore = int.Parse(System.Console.ReadLine());
 string message = $"The usage policy for {safetyScore} is {safetyScore switch
 {
     > 90 => "Unlimited usage",
@@ -10,12 +10,15 @@ string message = $"The usage policy for {safetyScore} is {safetyScore switch
     > 50 => "Issues must be addressed within 1 day",
     _ => "Issues must be addressed before continued use",
 }}";
-Console.WriteLine(message);
+System.Console.WriteLine(message);
+System.Console.WriteLine(new string('*', 40));
 int salary = 500;
 int year = 5;
 const int month = 12;
 int yarsProfit = month * year * salary;
-Console.WriteLine($"With a salary of {salary:C}, the employee will receive {yarsProfit:C} in {year} years.");
+System.Console.WriteLine($"With a salary of {salary:C}, the employee will receive {yarsProfit:C} in {year} years.");
+
+System.Console.WriteLine(new string('*', 40));
 
 
 
